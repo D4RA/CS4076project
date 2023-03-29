@@ -20,6 +20,7 @@ set(PROJECT_SOURCES
         secondwindow.cpp
         secondwindow.h
         secondwindow.ui
+        images.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

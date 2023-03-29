@@ -15,6 +15,9 @@ public:
     explicit SecondWindow(QWidget *parent = nullptr);
     ~SecondWindow();
 
+private slots:
+    void on_comboBox_activated(int index);
+
 private:
     Ui::SecondWindow *ui;
 };

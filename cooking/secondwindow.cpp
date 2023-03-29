@@ -6,9 +6,16 @@ SecondWindow::SecondWindow(QWidget *parent) :
     ui(new Ui::SecondWindow)
 {
     ui->setupUi(this);
+
 }
 
 SecondWindow::~SecondWindow()
 {
     delete ui;
 }
+
+void SecondWindow::on_comboBox_activated(int index)
+{
+
+}
+
