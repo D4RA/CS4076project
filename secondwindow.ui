@@ -1,116 +1,209 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>SecondWindow</class>
- <widget class="QDialog" name="SecondWindow">
+ <class>secondWIndow</class>
+ <widget class="QDialog" name="secondWIndow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>753</width>
-    <height>487</height>
+    <width>692</width>
+    <height>642</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QComboBox" name="comboBox">
-   <property name="geometry">
-    <rect>
-     <x>70</x>
-     <y>60</y>
-     <width>101</width>
-     <height>22</height>
-    </rect>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
    </property>
-   <item>
-    <property name="text">
-     <string>ground beef</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>onions</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>garlic</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>tomato</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>parsley</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>basil</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>salt</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>pepper</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>lasgna sheets</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>cheese</string>
-    </property>
-   </item>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>8</x>
-     <y>0</y>
-     <width>241</width>
-     <height>481</height>
-    </rect>
+   <property name="topMargin">
+    <number>10</number>
    </property>
-   <property name="text">
-    <string/>
+   <property name="rightMargin">
+    <number>10</number>
    </property>
-   <property name="pixmap">
-    <pixmap resource="images.qrc">:/ICONS/lasagna.jpg</pixmap>
+   <property name="bottomMargin">
+    <number>10</number>
    </property>
-   <property name="scaledContents">
-    <bool>true</bool>
+   <property name="spacing">
+    <number>5</number>
    </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>60</x>
-     <y>390</y>
-     <width>141</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PushButton</string>
-   </property>
-  </widget>
-  <zorder>label</zorder>
-  <zorder>pushButton</zorder>
-  <zorder>comboBox</zorder>
+   <item row="0" column="1">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>670</width>
+        <height>620</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>270</y>
+         <width>401</width>
+         <height>354</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="6" column="0">
+         <widget class="QTextEdit" name="textEdit_4"/>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton">
+          <property name="text">
+           <string>ingredients</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>directions</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextEdit" name="textEdit_3"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>0</y>
+         <width>401</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>directions</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>ingredients</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QTextEdit" name="textEdit_5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>271</width>
+         <height>249</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QCheckBox" name="checkBox">
+          <property name="text">
+           <string>CheckBox</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="font">
+           <font>
+            <family>Impact</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>pasta</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="image.qrc">:/icon/lasagna.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>280</y>
+         <width>271</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="text">
+           <string>CheckBox</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2">
+          <property name="font">
+           <font>
+            <family>Impact</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>NOT METH</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="image.qrc">:/icon/download.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
  </widget>
  <resources>
-  <include location="images.qrc"/>
+  <include location="image.qrc"/>
  </resources>
  <connections/>
 </ui>

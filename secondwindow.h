@@ -1,27 +1,35 @@
 #ifndef SECONDWINDOW_H
 #define SECONDWINDOW_H
 
+#include "thirdwindow.h"
 #include <QDialog>
 
 namespace Ui {
-class SecondWindow;
+class secondWIndow;
 }
 
-class SecondWindow : public QDialog
+class secondWIndow : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit SecondWindow(QWidget *parent = nullptr);
-    ~SecondWindow();
+    explicit secondWIndow(QWidget *parent = nullptr);
+    ~secondWIndow();
 
 private slots:
-    void on_comboBox_activated(int index);
+
 
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_3_clicked();
+
 private:
-    Ui::SecondWindow *ui;
+    Ui::secondWIndow *ui;
+    thirdWindow *thirdwin;
 };
 
 #endif // SECONDWINDOW_H
